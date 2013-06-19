@@ -1,0 +1,37 @@
+body {
+
+	background-image:url('http://www.stephencaver.com/-/img/bg-clouds.jpg');
+	background-image:opacity:0.4;
+
+}
+
+
+input {
+	position:absolute;
+	left: 600px;
+}
+
+h1 {
+	color: white;
+	position:relative;
+	left: 525px;
+}
+
+h2 {
+	position:relative;
+	left:400px;
+	width:500px;
+	margin: 0px;
+}
+
+p {
+	position:relative;
+	left:600px;
+	top: 100px;
+}
+
+button {
+	position:relative;
+	left:750px;
+	color: red;
+}

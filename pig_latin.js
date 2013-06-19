@@ -3,7 +3,10 @@ $(document).ready(function(){
 		if (e.which == 13){
 			
 			check = true;
-			stored_input = $('#input').val();
+			stored_input = $('#input').val().toLowerCase();
+			// if ((typeof stored_input) != "string"){
+				
+			// }
 			console.log("Hi");
 			$('#input').val('');
 			// converter();
@@ -15,6 +18,17 @@ $(document).ready(function(){
 	});
 });
 
+$(document).ready(function(){
+	$('button').click(function(){
+			
+			check = true;
+			stored_input = $('#input').val().toLowerCase();
+			console.log("Hi");
+			$('#input').val('');
+			var price = $('<p>'+ converter()+'</p>');
+			$('body').append(price);
+	});
+});
 
 var stored_input;
 var latin = [];
@@ -43,4 +57,23 @@ for (var i = 0; i < stored_input.length; i++){
 	}
 
 }
+
+
+
+$(document).ready(function(){
+		$('.convert').mouseenter(function() {
+				console.log("hello");
+ 		 $('h1').replaceWith($('<h1>igPay atinLay onverterCay</h1>'));
+		});
+
+		$('.convert').mouseleave(function(){
+   			$('h1').replaceWith($('<h1>Pig Latin Converter</h1>'));
+		});
+});
+  // function(){
+  // 	console.log("bye");
+    // $(this).removeClass("ui-state-hovered");
+ // $('#Converter').hover();//(function(){
+// 	$('#Converter').apppend($("<span>***</span>"));
+// 	});
 
