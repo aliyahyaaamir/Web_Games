@@ -8,8 +8,9 @@ $(document).ready(function(){
 			$('#input').val('');
 			// converter();
 			// console.log(latin3 + latin2 + latin + 'ay');
-			console.log(converter());
-
+			// console.log(converter());
+			var price = $('<p>'+ converter()+'</p>');
+			$('body').append(price);
 		}
 	});
 });
